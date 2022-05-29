@@ -59,6 +59,10 @@ public class projetoJantinha {
           }
           
           valores[i][j] = leia.nextInt();
+          while(valores[i][j] < 0){
+              System.out.println("Digite apenas valores positivos!!");
+              valores[i][j] = leia.nextInt();
+          }
               
           
       
