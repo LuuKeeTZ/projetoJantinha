@@ -3,6 +3,7 @@ public class projetoJantinha {
     public static void main(String[] args) {
       Scanner leia = new Scanner(System.in);  
       
+      char opc;
       int maxLin = 4, maxCol = 4;
       int [][] valores = new int [maxLin][maxCol];
       
@@ -75,17 +76,30 @@ public class projetoJantinha {
               System.out.println("Digite apenas valores positivos!!");
               valores[i][j] = leia.nextInt();
           }
-              
+        }
+      }
+      do{
+          System.out.println("Qual prato escolhido?");
+          int prato = leia.nextInt();
           
+          if(prato == 1){
+              //fazer o calculo do prato 1
+          }
+          if(prato == 2){
+              //fazer o calculo do prato 2
+          }
+          if(prato == 3){
+              //fazer o calculo do prato 3
+          }
+          if(prato == 0){
+              //fazr o calculo do prato promoção
+          }
+          
+          System.out.println("Deseja pedir outro? \nDigite n para sair e y para continuar");
+          opc = leia.next().charAt(0);
+      }while( opc != 'n');
       
-      
-      
-      
-      
-      
-      
-      }
-      }
+        System.out.println("O valor final ficou: ");
         
         
         
