@@ -3,7 +3,7 @@ public class projetoJantinha {
     public static void main(String[] args) {
       Scanner leia = new Scanner(System.in);  
       
-      int maxLin = 3, maxCol = 4;
+      int maxLin = 4, maxCol = 4;
       int [][] valores = new int [maxLin][maxCol];
       
       for(int i = 0; i < maxCol; i++){
@@ -30,6 +30,9 @@ public class projetoJantinha {
           if(i == 0 && j == 2){
               System.out.println("Prato 3");
           }
+          if(i == 0 && j == 3){
+              System.out.println("Prato Promoção");
+          }
           if(i == 1 && j == 0){
               System.out.println("Prato 1");
           }
@@ -38,6 +41,9 @@ public class projetoJantinha {
           }
           if(i == 1 && j == 2){
               System.out.println("prato 3");
+          }
+          if(i == 1 && j == 3){
+              System.out.println("Prato Promoção");
           }
           if(i == 2 && j == 0){
               System.out.println("Prato 1");
@@ -48,6 +54,9 @@ public class projetoJantinha {
           if(i == 2 && j == 2){
               System.out.println("Prato 3");
           }
+          if(i == 2 && j == 3){
+              System.out.println("Prato Promoção");
+          }
           if(i == 3 && j == 0){
               System.out.println("Prato 1");
           }
@@ -56,6 +65,9 @@ public class projetoJantinha {
           }
           if(i == 3 && j == 2){
               System.out.println("Prato 3");
+          }
+          if(i == 3 && j == 3){
+              System.out.println("Prato Promoção");
           }
           
           valores[i][j] = leia.nextInt();
